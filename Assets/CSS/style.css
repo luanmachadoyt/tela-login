@@ -12,9 +12,12 @@
 }
 
 body {
-    background: url(../IMG/background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 90vh;
+	background: linear-gradient(-45deg, #EE7752, #3f3ce7, #0080af, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
     width: 100vw;
     height: 100vh;
     margin: 0px;
@@ -24,16 +27,53 @@ body {
     align-items: center;
 }
 
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
 .containder {
     width: 80%;
     height: 633px;
-    background: linear-gradient(143.49deg, rgba(48, 66, 43, 0.9) -14.39%, rgba(48, 66, 43, 0.6) 100%);
-    ;
-    box-shadow: 0 8px 32px 0 rgba(31, 135, 31, 0.37);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -77,7 +117,8 @@ body {
 .containder .cadastro button {
     width: 250px;
     height: 50px;
-    background: #30422B;
+    background: rgb(40,32,175);
+background: linear-gradient(90deg, rgba(40,32,175,1) 0%, rgba(0,145,175,1) 100%);
     border: 2px solid #FFFFFF;
     border-radius: 30px;
     font-family: 'Lexend';
@@ -169,6 +210,7 @@ body {
     background: rgba(217, 217, 217, 0.4);
     border-radius: 34px;
     margin-bottom: 20px;
+    border: none;
     
 }
 .containder .login .usuario  i {
@@ -209,6 +251,7 @@ body {
     background: rgba(217, 217, 217, 0.4);
     border-radius: 34px;
     margin-bottom: 20px;
+    border: none;
     
 }
 .containder .login .senha  i {
@@ -272,7 +315,7 @@ body {
 .containder .login .btn{
     width: 250px;
     height: 50px;
-    background: #30422B;
+background: linear-gradient(-45deg, #0080af, #23D5AB);
     border: 2px solid #FFFFFF;
     border-radius: 30px;
     font-family: 'Lexend';
@@ -284,6 +327,7 @@ body {
     cursor: pointer;
     margin-top: 50px;
     transition: 500ms;
+    
 }
 .containder .btn button:hover{
     transform: scale(1.04);
