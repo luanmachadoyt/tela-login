@@ -64,7 +64,9 @@ body {
 	}
 }
 
-
+.botao{
+    padding-bottom: 30px;
+}
 .containder {
     width: 80%;
     height: 633px;
@@ -74,7 +76,7 @@ body {
     -webkit-backdrop-filter: blur( 13.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-around;
 }
@@ -117,8 +119,7 @@ body {
 .containder .cadastro button {
     width: 250px;
     height: 50px;
-    background: rgb(40,32,175);
-background: linear-gradient(90deg, rgba(40,32,175,1) 0%, rgba(0,145,175,1) 100%);
+background: linear-gradient(-45deg, #0080af, #23D5AB);
     border: 2px solid #FFFFFF;
     border-radius: 30px;
     font-family: 'Lexend';
@@ -312,7 +313,7 @@ background: linear-gradient(90deg, rgba(40,32,175,1) 0%, rgba(0,145,175,1) 100%)
     text-decoration: underline;
     cursor: pointer;
 }
-.containder .login .btn{
+.btn{
     width: 250px;
     height: 50px;
 background: linear-gradient(-45deg, #0080af, #23D5AB);
@@ -332,3 +333,4 @@ background: linear-gradient(-45deg, #0080af, #23D5AB);
 .containder .btn button:hover{
     transform: scale(1.04);
 }
+
