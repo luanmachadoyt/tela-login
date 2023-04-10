@@ -9,17 +9,21 @@
 
     <!-- Links -->
     <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link rel="stylesheet" href="Assets/CSS/responsivo.css">
     <script src="Assets/JS/script.js" defer></script>
     <script src="https://kit.fontawesome.com/7c3aef27c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js" integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
-    <div class="containder">
+
+    <div class="containder animate__animated animate__fadeInLeft">
         <div class="cadastro">
             <h1 id="logo">LOGO</h1>
             <h1 id="titulo">Novo Login</h1>
             <div class="linha"></div>
-            <button>CRIAR CONTA</button>
+            <button class="btn">CRIAR CONTA</button>
             <div class="contas">
                 <h5>Entrar com</h5>
                 <div class="icon">
@@ -35,19 +39,18 @@
             <h1>LOGIN</h1>
             <h5>Bem vindo de volta</h5>
             <div class="linha"></div>
-
-            <div class="usuario">
+            <div class="usuario animate__animated animate__fadeInDown">
                 <fieldset>
                     <i class="fa-solid fa-user"></i>
                     <div class="linha-input"></div>
-                    <input type="text" placeholder="USUARIO" required>
+                    <input type="text" placeholder="Usuario" required>
                 </fieldset>
             </div>
-            <div class="senha">
+            <div class="senha animate__animated animate__fadeInDown">
                 <fieldset>
                     <i class="fa-solid fa-lock"></i>
                     <div class="linha-input"></div>
-                    <input type="password" name="senha" id="senha" placeholder="******************" required>
+                    <input type="password" name="senha" id="senha" placeholder="Senha" required>
                     <i class="fa-solid fa-eye"></i>
                 </fieldset>
             </div>
@@ -62,8 +65,26 @@
                     <p>Esqueceu a senha?</p>
                 </div>
             </div>
-            <button type="button">CRIAR CONTA</button>
+            
+            <button type="submit" class="btn">ENTRAR</button>
+            <div class="esqueceu-senha hidden">
+                    <p>Esqueceu a senha?</p>
+                </div>
+
+            <div class="new-Cadastro hidden">
+                    <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+                </div>
+             <div class="contas hidden">
+                <h5>Entrar com</h5>
+                <div class="icon">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-apple"></i>
+                </div>
+            </div>
         </div>
+        
     </div>
 </body>
 
