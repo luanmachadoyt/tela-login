@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400&family=Righteous&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url(../IMG/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.containder {
+    width: 80%;
+    height: 633px;
+    background: linear-gradient(143.49deg, rgba(48, 66, 43, 0.9) -14.39%, rgba(48, 66, 43, 0.6) 100%);
+    ;
+    box-shadow: 0 8px 32px 0 rgba(31, 135, 31, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+.containder .cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 7%;
+    gap: 3rem;
+}
+
+.containder .cadastro #logo {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 62px;
+    letter-spacing: -0.005em;
+    color: white;
+}
+
+.containder .cadastro #titulo {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 62px;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+}
+
+.containder .cadastro .linha {
+    width: 122px;
+    height: 2px;
+    background-color: white;
+}
+
+.containder .cadastro button {
+    width: 291px;
+    height: 61px;
+    background: #30422B;
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+    font-family: 'Lexend';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.185em;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.containder .cadastro .contas {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 10;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.containder .cadastro .contas h5 {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 10;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.containder .cadastro .icon {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 10;
+    font-size: 25px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+.containder .linha-divi {
+    width: 2px;
+    height: 496px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+.containder .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containder .login h1 {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 62px;
+    letter-spacing: -0.005em;
+    color: white;
+}
+
+.containder .login h5 {
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 62px;
+    letter-spacing: -0.005em;
+    color: white;
+}
+
+.containder .login .usuario fieldset {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 40px;
+    background: rgba(217, 217, 217, 0.4);
+    border-radius: 34px;
+    margin-bottom: 20px;
+    
+}
+.containder .login .usuario  i {
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+}
+.containder .login .usuario  .linha-input {
+    height: 20px;
+    width: 1px;
+    background-color: white;
+    margin-left: 10px;
+}
+
+.containder .login .usuario input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    margin-left: 20px;
+}
+
+.containder .login .usuario input::placeholder {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 200;
+    color: #FFFFFF;
+
+}
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+.containder .login .senha fieldset {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 40px;
+    background: rgba(217, 217, 217, 0.4);
+    border-radius: 34px;
+    margin-bottom: 20px;
+    
+}
+.containder .login .senha  i {
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+}
+.containder .login .senha  .linha-input {
+    height: 20px;
+    width: 1px;
+    background-color: white;
+    margin-left: 10px;
+}
+
+.containder .login .senha input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    margin-left: 20px;
+}
+
+.containder .login .senha input::placeholder {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 200;
+    color: #FFFFFF;
+
+}
+.containder .login .senha .fa-eye {
+    margin-left: 50px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.containder .login .dados {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+.containder .login .dados .lembrar{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.containder .login .dados .lembrar label{
+    color: white;
+    font-size: 12px;
+}
+.containder .login .dados .esqueceu-senha p{
+    color: white;
+    font-size: 12px;
+}
+.containder .login .dados .esqueceu-senha p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.containder .login button{
+    width: 250px;
+    height: 50px;
+    background: #30422B;
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+    font-family: 'Lexend';
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.185em;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 50px;
+}
