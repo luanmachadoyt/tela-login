@@ -7,17 +7,18 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-.hidden{
+
+.hidden {
     display: none;
 }
 
 body {
     height: 90vh;
-	background: linear-gradient(-45deg, #EE7752, #3f3ce7, #0080af, #23D5AB);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
+    background: linear-gradient(-45deg, #EE7752, #3f3ce7, #0080af, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
     width: 100vw;
     height: 100vh;
     margin: 0px;
@@ -26,56 +27,65 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+body.dark{
+    background-color: darkblue;
+}
 
 @-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 @-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 @keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
 
-.botao{
+.botao {
     padding-bottom: 30px;
 }
+
 .containder {
     width: 80%;
-    height: 633px;
-    background: rgba( 255, 255, 255, 0.15 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 13.5px );
-    -webkit-backdrop-filter: blur( 13.5px );
+    height: 70%;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
     display: none;
     align-items: center;
     justify-content: space-around;
@@ -87,7 +97,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .containder .cadastro #logo {
@@ -112,14 +122,14 @@ body {
 
 .containder .cadastro .linha {
     width: 122px;
-    height: 2px;
-    background-color: white;
+    height: 2px;background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 53%);
 }
 
 .containder .cadastro button {
     width: 250px;
     height: 50px;
-background: linear-gradient(-45deg, #0080af, #23D5AB);
+    background: linear-gradient(-45deg, #0080af, #23D5AB);
     border: 2px solid #FFFFFF;
     border-radius: 30px;
     font-family: 'Lexend';
@@ -142,7 +152,7 @@ background: linear-gradient(-45deg, #0080af, #23D5AB);
     align-items: center;
     flex-direction: column;
     gap: 10px;
-
+    padding-top: 60px;
 }
 
 .containder .cadastro .contas h5 {
@@ -165,12 +175,18 @@ background: linear-gradient(-45deg, #0080af, #23D5AB);
     gap: 1rem;
     cursor: pointer;
 }
+.containder .cadastro .icon i{
+    transition: 500ms;
+}
+.containder .cadastro .icon i:hover{
+    transform: scale(1.3);
+}
 
 /* ------------------------------------------------------------------------------------------------------------------- */
 
 .containder .linha-divi {
     width: 2px;
-    height: 496px;
+    height: 80%;
     background-color: white;
     border-radius: 30px;
 }
@@ -212,14 +228,16 @@ background: linear-gradient(-45deg, #0080af, #23D5AB);
     border-radius: 34px;
     margin-bottom: 20px;
     border: none;
-    
+
 }
-.containder .login .usuario  i {
+
+.containder .login .usuario i {
     font-size: 20px;
     color: white;
     padding-left: 20px;
 }
-.containder .login .usuario  .linha-input {
+
+.containder .login .usuario .linha-input {
     height: 20px;
     width: 1px;
     background-color: white;
@@ -241,6 +259,7 @@ background: linear-gradient(-45deg, #0080af, #23D5AB);
     color: #FFFFFF;
 
 }
+
 /* ----------------------------------------------------------------------------------------------------- */
 
 
@@ -253,14 +272,16 @@ background: linear-gradient(-45deg, #0080af, #23D5AB);
     border-radius: 34px;
     margin-bottom: 20px;
     border: none;
-    
+
 }
-.containder .login .senha  i {
+
+.containder .login .senha i {
     font-size: 20px;
     color: white;
     padding-left: 20px;
 }
-.containder .login .senha  .linha-input {
+
+.containder .login .senha .linha-input {
     height: 20px;
     width: 1px;
     background-color: white;
@@ -273,6 +294,7 @@ background: linear-gradient(-45deg, #0080af, #23D5AB);
     outline: none;
     color: white;
     margin-left: 20px;
+    width: 70%;
 }
 
 .containder .login .senha input::placeholder {
@@ -281,11 +303,6 @@ background: linear-gradient(-45deg, #0080af, #23D5AB);
     font-weight: 200;
     color: #FFFFFF;
 
-}
-.containder .login .senha .fa-eye {
-    margin-left: 50px;
-    font-size: 17px;
-    cursor: pointer;
 }
 
 /*--------------------------------------------------------------------------------*/
@@ -296,27 +313,32 @@ background: linear-gradient(-45deg, #0080af, #23D5AB);
     padding: 0 20px;
     align-items: center;
 }
-.containder .login .dados .lembrar{
+
+.containder .login .dados .lembrar {
     display: flex;
     align-items: center;
     gap: 5px;
 }
-.containder .login .dados .lembrar label{
+
+.containder .login .dados .lembrar label {
     color: white;
     font-size: 12px;
 }
-.containder .login .dados .esqueceu-senha p{
+
+.containder .login .dados .esqueceu-senha p {
     color: white;
     font-size: 12px;
 }
-.containder .login .dados .esqueceu-senha p:hover{
+
+.containder .login .dados .esqueceu-senha p:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-.btn{
+
+.btn {
     width: 250px;
     height: 50px;
-background: linear-gradient(-45deg, #0080af, #23D5AB);
+    background: linear-gradient(-45deg, #0080af, #23D5AB);
     border: 2px solid #FFFFFF;
     border-radius: 30px;
     font-family: 'Lexend';
@@ -328,9 +350,69 @@ background: linear-gradient(-45deg, #0080af, #23D5AB);
     cursor: pointer;
     margin-top: 50px;
     transition: 500ms;
-    
+
 }
-.containder .btn button:hover{
+
+.containder .btn button:hover {
     transform: scale(1.04);
 }
 
+
+
+.link-dark {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+    color: black;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 25px;
+    z-index: 1000;
+}
+
+#dark1 {
+    margin-top: 17px;
+}
+
+.link-dark:hover {
+    transform: translateY(-10px);
+    transition: all 1s;
+    transform-origin: button;
+
+    box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+    background-color: #fff;
+}
+
+.link-dark::before, .link-dark:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    top: -3px;
+    left: -3px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    opacity: 0;
+    animation: animacao-botao-dark 1s linear infinite;
+}
+.button button:after{
+    animation-delay: .5s;
+}
+@keyframes animacao-botao-dark {
+    0%{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
